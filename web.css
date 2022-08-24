@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=League+Spartan:wght@300&family=Manrope:wght@200;300&family=Nunito+Sans:wght@600&family=Roboto:ital@1&family=Source+Sans+Pro:ital,wght@0,200;1,400&family=Varela+Round&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'League Spartan', sans-serif;
+    font-weight: 700;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+    height: 100%;
+     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('Weather Icons/bgg.jpg');
+    background-size: 2800px;
+    position: absolute;
+    background-position: center; 
+    
+} 
+.wrapper{
+    background: transparent;
+    width: 400px;
+    height: 441px;
+    border: 3px solid #1a83ce;
+    background: rgba(0,0,0,0.19)
+}
+
+.wrapper .info-part{
+    display: none;
+    margin: 20px 25px 30px;
+}
+.wrapper header{
+    font-size: 39px;
+    color: #4aaaef;
+    font-style: bolder;
+    padding: 16px 15px;
+    display: flex; 
+    align-items: center;
+
+    border-bottom: 1px solid #bfbfbf;
+}
+.wrapper.active header {
+    font-size: 30px;
+    margin-left:5px ;
+}
+.wrapper.active .input-part{
+    display: none;
+}
+
+.input-part .info-txt{
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: none;
+    justify-content: center;
+    font-weight: 440;
+     align-items: center;
+     padding: 20px 10px;
+     border-radius: 9px;
+}
+ .info-txt.error{
+    display: block;
+    color: #721c24;
+    background: #ec838c;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid #e8959d;
+}
+
+ .info-txt.pending{
+    display: block;
+    color: #0c5460;
+    background: #81cbd8;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid #6dc2cf;   
+}
+
+header i{
+cursor: pointer;
+font-size: 30px;
+margin-right: 12px;
+}
+.wrapper .input-part{
+margin: 20px 25px 30px;
+/*display: none;*/
+}
+.input-part :where(input,button){
+   width: 100%;
+   font-size: 18px;
+    height: 55px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 7px;
+}
+.input-part input{
+    text-align: center;
+border: 1px solid #43AFFC;
+
+}
+.input-part button :hover {
+color: #43AFFC;
+background-color: #fff;
+cursor: pointer;
+}
+.input-part button{
+color: #fff;
+background: #43AFFC;
+}
+
+.info-part input:is(:focus, :valid){
+ border: 2px solid #43AFFC;
+}
+
+.input-part .separator{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.separator::before{
+    content: "Or";
+    font-size: 40px;
+    color: #2993df;
+    font-style: bolder;
+}
+
+ .wrapper .weather-part{
+    margin: 30px 0 0;
+    display: none;
+    align-items: center;
+    justify-content: column;
+    flex-direction: column;
+ }
+.wrapper.active .weather-part{
+    display: flex;
+}
+ .weather-part img{
+    max-width: 125px;
+ }
+ .weather-part .temp{
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+ }
+
+ .weather-part .temp .numb{
+ font-weight: 600;
+ }
+
+ .weather-part .temp .deg{
+    font-size: 36px;
+    margin: 10px 0 0 0;
+    display: block;
+ }
+
+.weather-part .weather{
+    font-size: 21px;
+    text-align: center;
+    margin: -5px 20px 15px;
+}
+.weather-part  .location{
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.location i{
+    font-size: 22px;
+    margin-right: 5px;
+
+}
+.weather-part .bottom-details{
+  border-top: 2px solid #1a83ce;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.bottom-details .column{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 15px 0;
+}
+
+.column i{
+    font-size: 40px;
+    color:#43AFFC;
+}
+.column.humidity{
+border-left: 2px solid #1a83ce;
+}
+.details .temp, .humidity span{
+font-size: 36px;
+margin-top: -3px;
+}
+.details .temp .deg{
+    margin: 0;
+    font-size: 30px;
+    pad: 0 2px 0 1px;
+}
+.details p{
+font-size: 14px;
+margin-top: -6px;
+}
+
+
+
+
+
+
+
+
+
+
