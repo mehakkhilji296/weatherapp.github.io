@@ -88,7 +88,7 @@ function weatherDetails(info) {
             wIcon.src = "cloud.svg";
         }
         else if((id >=300 && id<=321 ) || (id>=500 && id<=531)){
-            wIcon.src = "/rain.svg";
+            wIcon.src = "rain.svg";
             }
 
 
