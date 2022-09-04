@@ -13,7 +13,7 @@ body{
    
     width: 100%;
     height: 100%;
-     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('Weather Icons/bgg.jpg');
+     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('bgg.jpg');
     background-size: 2800px;
     position: absolute;
     background-position: center; 
